@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>(selectores)
+        *{  (este selector es para toda la web y decirle que sea todo )
+        marging:0px 
+        padding:0px
+}
+        body{
+        background	
+font-family
+    
+}
+
+header{
+background
+height: 100px (se le da una altura porque si no el fondo de color no se verá)
+width: 100p%
+margin: 0px:
+text-align: center:
+line-height: 100px (esto centra el título en vertical dentro de la caja)
+color: white
+}
+
+nav ul li { (para el menu que quede a la izquierda en horizontal, sin línea y un margen)
+float: left
+   list-style: none
+margin: 10px
+}
+
+.clearfix{   (esta clase se pone en un div vacío con la una clase llamamos clearfix y se pone entre el nav y la section , de esta manera el float que tiene el nav no hace que se mueva todo el contenido cada vez que hacemos scroll)
+clear: both;
+}
+
+nav{ (para el fondo y borde del menú nav)
+background
+height: 50px
+border: 1px solid black
+
+}
+
+#content{ con esa clase de todo el contenido y la siguiente etiqueta aside , ponemos estas dos cajas una al lado de la otra y creamos el contenido y el Aside  con un ancho de 80% y otro de 20%
+NOTA: copiamos y pegamos el mismo div de clearfix entre el contenido y el footer para que el footer se quede en su sitio
+floar:left
+width:80%
+background
+min-height:500 px (lo poneos tb en el aside para que la caja de contendio tenga un minimo de altura, ya que sino va a quedar muy fina)
+padding: 40px (tb. se podría poner left 20px y rigth 20px)
+width: calc(80% - 80px)
+}
+!!!! NOTA: funcion calc, si al dar un paddgin se descolocan las cajas por que tienen un porcentaje determinado, se le pone calc en el width restandole en pixels la cantidad de pixeles que le damos de relleno padding (ej. padding de 10px se le quita -20px)
+            padding:30px;
+            width: calc(80% - 60px)
+aside{
+float: left
+width: 20%
+backgrond
+min-height: 500px (le ponemos igual que en el contenido para que tenga también un minimo de altura y no se queda muy fina)
+padding: 20px (tb. se podría poner left 10px y rigth 10px)
+width: calc(20% - 40px)
+}
+
+        #container{ (id no se puede repetir)
+        width: 70%
+        margin: 0px auto; (para centrar)
+        border: 1px solid black (dashed por ej. para línea discontinua)
+}
+
+        .articulo{ (class si se puede repetir, esta es una clase para la etiqueta article)
+            color: para letra blanca
+            margin-top para separar de la parte superior
+            margin-botom para separar de la parte inferior
+            padding-botom para separar un poco mas la parte inferior
+            border-botom para hacer una línea abajo de cada articulo
+            (para poner SOLO LÍNEA  arriba hacemos el siguiente first:child
+
+
+}
+.article:first-child{
+border-top: 1px solid white
+padding-top: (para separar igual que los de abajo
+}
+
+footer{
+background
+color
+text-align: center
+height: 50px
+line-height: 50px (para centrar verticalmente)
+}
+.article h2{
+font-size: 25px;
+}
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
